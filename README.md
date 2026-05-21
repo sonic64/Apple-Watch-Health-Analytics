@@ -6,9 +6,9 @@
 
 ### Introduction
 
-The purpose of this study is to use the following two datasets to generate insights on a simulated experimental study. Participants were asked to wear an Apple Watch and record several aspects of their activity and health at three different timepoints. Some aspects of the participants changed over the course of the trial, e.g. smoking status. These aspects were recorded in the first dataset, [**health_irreg_rhythm**](Data/health_irreg_rhythm.xlsx).
+The purpose of this study is to use the following two datasets to generate insights on a simulated experimental study. Participants were asked to wear an Apple Watch and record several aspects of their activity and health at three different timepoints. Some aspects of the participants changed over the course of the trial, e.g. smoking status. These aspects were recorded in the first dataset, [**health_irreg_rhythm**](Data/health_irreg_rhythm.csv).
 
-Participants were also organized into cohorts: groups of individuals to help facilitate the study. Each cohort’s average temperature was aggregated for each month of the study and is stored in a second dataset, [**health_cohort_monthly**](Data/health_cohort_monthly.xlsx).
+Participants were also organized into cohorts: groups of individuals to help facilitate the study. Each cohort’s average temperature was aggregated for each month of the study and is stored in a second dataset, [**health_cohort_monthly**](Data/health_cohort_monthly.csv).
 
 The detailed schemas of the two tables are as follows:
 
