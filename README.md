@@ -4,6 +4,17 @@
 
 ![Banner.png](./Images/Banner.png)
 
+### Table of Contents
+* [Introduction](#Introduction)
+* [Tableau Dashboard](#Tableau-Dashboard)
+* [Databricks Pipeline](#Databricks-Pipeline)
+    * [A. Pipeline Architecture](#A-Pipeline-Architecture)
+    * [B. Key Transformations](#B-Key-Transformations)
+    * [C. Business Logic](#C-Business-Logic)
+    * [D. Final Output](#D-Final-Output)
+    * [E. Data Quality Highlights](#E-Data-Quality-Highlights)
+* [Future Directions](#Future-Directions)
+
 ### Introduction
 
 The purpose of this study is to use the following two datasets to generate insights on a simulated experimental study. Participants were asked to wear an Apple Watch and record several aspects of their activity and health at three different timepoints. Some aspects of the participants changed over the course of the trial, e.g. smoking status. These aspects were recorded in the first dataset, [**health_irreg_rhythm**](Data/health_irreg_rhythm.csv).
@@ -50,7 +61,7 @@ We implements a medallion architecture (Bronze → Silver → Gold) data pipelin
 
 [SQL Data Pipeline Notebook](SQL Data Pipeline)
 
-#### Pipeline Architecture
+#### A. Pipeline Architecture
 
 **Bronze Layer (Raw Data)**
 
@@ -107,7 +118,7 @@ Aggregated data for smoking behavior analysis:
   4. **Started Then Quit** - Non-smoker → smoker → non-smoker
   5. **Quit Then Restarted** - Smoker → non-smoker → smoker
 
-#### Key Transformations
+#### B. Key Transformations
 
 **Smoking Timeline Analysis**
 ```sql
@@ -120,20 +131,20 @@ MAX(CASE WHEN timepoint = 2 THEN smoker_fixed END) as middle_status
 MAX(CASE WHEN timepoint = total_timepoints THEN smoker_fixed END) as last_status
 ```
 
-#### Business Logic
+#### C. Business Logic
 Used CASE statements to classify behavior patterns based on:
 * Initial vs. final smoking status
 * Total number of smoking observations
 * Middle timepoint status (for detecting quit-and-restart or start-and-quit patterns)
 
-#### Final Output
+#### D. Final Output
 
 The pipeline produces a summary table showing:
 * `smoking_category`: Behavior classification
 * `participant_count`: Number of participants in each category
 * `percent_of_participants`: Percentage distribution across categories
 
-#### Data Quality Highlights
+#### E. Data Quality Highlights
 
 * ✓ Standardized date formats
 * ✓ Type conversions (string → boolean)
@@ -142,9 +153,8 @@ The pipeline produces a summary table showing:
 * ✓ Cohort assignment validation
 * ✓ Preserved all original data in bronze layer for auditability
 
-### Next Steps
+### Future Directions
 
 Potential extensions:
 * Analyze correlations between smoking status changes and other health metrics
 * Build predictive models for irregular heart rhythm based on lifestyle factors
-* Create visualizations and dashboards for stakeholder reporting
