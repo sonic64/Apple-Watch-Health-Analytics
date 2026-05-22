@@ -1,6 +1,6 @@
 # Apple Watch Health Analytics
 
-### *Analyzing health and activity trends from a simulated Apple Watch study.*
+### *Build an interactive Tableau dashboard and a Databricks medallion architecture pipeline from a simulated Apple Watch study.*
 
 ![Banner.png](./Images/Banner.png)
 
