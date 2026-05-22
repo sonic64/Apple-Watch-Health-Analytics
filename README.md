@@ -144,6 +144,14 @@ The pipeline produces a summary table showing:
 * `participant_count`: Number of participants in each category
 * `percent_of_participants`: Percentage distribution across categories
 
+| smoking_category | participant_count | percent_of_participants |
+|---|---|---|
+| **Did Not Change** | 30 | 30.0 |
+| **Started Smoking** | 16 | 16.0 |
+| **Quit Smoking** | 16 | 16.0 |
+| **Started Then Quit** | 27 | 27.0 |
+| **Quit Then Restarted** | 11 | 11.0 |
+
 #### E. Data Quality Highlights
 
 * ✓ Standardized date formats
