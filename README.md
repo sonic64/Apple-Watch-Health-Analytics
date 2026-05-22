@@ -59,7 +59,7 @@ Key features of the analysis include:
 
 We implements a medallion architecture (Bronze → Silver → Gold) data pipeline to analyze data from this Apple Watch simulated experimental study. The details can be found in the following notebook:
 
-[SQL Data Pipeline Notebook](SQL Data Pipeline)
+[**SQL Data Pipeline Notebook**](SQL_Data_Pipeline.ipynb)
 
 #### A. Pipeline Architecture
 
