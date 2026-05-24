@@ -164,5 +164,6 @@ The pipeline produces a summary table showing:
 ### Future Directions
 
 Potential extensions:
+* Create a multi-task LakeFlow Job that orchestrates the Bronze → Silver → Gold pipeline with task dependencies, and monitor its execution
 * Analyze correlations between smoking status changes and other health metrics
 * Build predictive models for irregular heart rhythm based on lifestyle factors
