@@ -164,6 +164,6 @@ The pipeline produces a summary table showing:
 ### Future Directions
 
 Potential extensions:
-* Create a multi-task LakeFlow Job that orchestrates the Bronze → Silver → Gold pipeline with task dependencies, and monitor its execution
+* Create a Spark Declarative Pipelines (SDP) with less code, automatic orchestration, and built-in data quality expectations
 * Analyze correlations between smoking status changes and other health metrics
 * Build predictive models for irregular heart rhythm based on lifestyle factors
