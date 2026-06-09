@@ -49,7 +49,7 @@ Key features of the analysis include:
 
 - **Weekly Cohort Trends**: The main line chart tracks the percent difference in average health metrics, such as "ring closure," across five different cohorts over the course of the trial.
 
-- **Smoking Status Dynamics**: A dedicated bar chart reveals participant behavior changes, showing that while 59% of participants maintained their smoking status, 26% quit and 15% started smoking during the study.
+- **Smoking Status Dynamics**: A dedicated bar chart reveals participant behavior changes, showing that while 57% of participants maintained their smoking status, 27% quit and 16% started smoking during the study.
 
 - **Body Temperature Analysis**: The heatmap investigates potential relationships between average body temperature (ranging from 98.00°F to 103.00°F), smoking status changes, and Apple Watch hardware types, such as Aluminum, Ceramic, Steel, and Titanium.
 
