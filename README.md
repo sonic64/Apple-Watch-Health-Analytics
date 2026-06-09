@@ -148,8 +148,8 @@ The pipeline produces a summary table showing:
 |---|---|---|
 | **Did Not Change** | 30 | 30.0 |
 | **Started Smoking** | 16 | 16.0 |
-| **Quit Smoking** | 16 | 16.0 |
-| **Started Then Quit** | 27 | 27.0 |
+| **Quit Smoking** | 27 | 27.0 |
+| **Started Then Quit** | 16 | 16.0 |
 | **Quit Then Restarted** | 11 | 11.0 |
 
 #### E. Data Quality Highlights
